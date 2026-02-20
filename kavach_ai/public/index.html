@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavach AI | Safety Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛡️ KAVACH AI | Worker Safety Shield</h1>
+    </header>
+
+    <div class="dashboard">
+        <div class="sensors">
+            <div class="card">
+                <h3>H2S Gas (Sewer)</h3>
+                <p id="h2s-val" class="value">0 ppm</p>
+            </div>
+            <div class="card">
+                <h3>Methane</h3>
+                <p id="methane-val" class="value">0 %</p>
+            </div>
+            <div class="card">
+                <h3>Oxygen</h3>
+                <p id="oxygen-val" class="value">0 %</p>
+            </div>
+        </div>
+
+        <div id="decision-box" class="status-box safe">
+            <h2>Digital Permit-to-Work</h2>
+            <h1 id="permit-val">LOADING...</h1>
+            <p id="status-val">System initializing...</p>
+            <p>Risk Score: <span id="score-val">0</span>/100</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
